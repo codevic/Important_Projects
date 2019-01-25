@@ -1,0 +1,17 @@
+10,heap_sort,0.00151
+10,quick_sort-classical,0.000755
+10,quick_sort-randomized,0.002265
+10,quick_sort-median,0.003398
+10,quick_sort-hybrid,0.001133
+10,c++ inbuilt sort,0.001888
+100,heap_sort,0.049464
+100,quick_sort-classical,0.016236
+100,quick_sort-randomized,0.020011
+100,quick_sort-median,0.033605
+100,quick_sort-hybrid,0.066076
+100,c++ inbuilt sort,0.007174
+1000,heap_sort,0.257888
+1000,quick_sort-classical,1.44878
+1000,quick_sort-randomized,0.146123
+1000,quick_sort-median,1.408
+1000,quick_sort-hybrid,6.60692

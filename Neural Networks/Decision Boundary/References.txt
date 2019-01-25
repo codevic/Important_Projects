@@ -1,0 +1,8 @@
+Data used : MNIST DATA
+References:
+1. Neural Network Design by Hagan, Demuth, Beale and De Jesus.
+2. https://www.oreilly.com/learning/simple-line-plots-with-matplotlib
+3. https://stats.stackexchange.com/questions/71335/decision-boundary-plot-for-a-perceptron
+4. https://github.com/akshanshchaudhry/single_neuron_decision_boundary/blob/master/Decision_boundary.py
+5. https://stackoverflow.com/questions/48862451/perceptron-learning-algorithm-doesnt-work/48939759?noredirect=1#comment84890707_48939759 
+5. https://towardsdatascience.com/solving-a-simple-classification-problem-with-python-fruits-lovers-edition-d20ab6b071d2

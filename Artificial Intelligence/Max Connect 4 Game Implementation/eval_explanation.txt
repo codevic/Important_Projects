@@ -1,0 +1,7 @@
+-> Evaluation function :
+       AiPlayer.findBestPlay():
+        This method uses the minmax algorithm along with alpha beta pruning and depth limited search to make the best move the computer can make to win or tie the game.
+        It takes current game board state as input.
+        For each valid column inputted, it calls the Min_Utility() or Max_Utility() depending on the player.
+        Max_Utility()  and Min_Utility(): takes 4 parameters gameboard, depth, alpha and beta. They run until depth becomes 0. They use alpha beta pruning and each time reduces depth by 1.
+        The findBestPlay() returns the optimal column number decided by the function.

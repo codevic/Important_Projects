@@ -1,0 +1,80 @@
+---------------------------------------------------------------------------------
+Propositional Logic (Wumpus World)
+---------------------------------------------------------------------------------
+Code Structure :
+Classes : CheckTrueFalse, LogicalExpression
+---------------------------------------------------------------------------------
+class CheckTrueFalse :
+methods : main(), isValidInput(), getSymbols(), readExpression(), read_subexpressions(), valid_expression(), valid_symbol()
+class : TTEntails, Model
+
+
+valid_symbol() -> this function checks to see if a unique symbol is valid.
+valid_expression() -> this method checks to see if a logical expression is valid or not.
+read_subexpressions() -> this method reads in all of the unique symbols of a subexpression.
+readExpression() -> this method reads logical expressions.
+
+class TTEntails :
+methods : ttEntails(), removeSymbols(), pl_True(), ttCheckAll(), getSymbols()
+
+ttEntails() -> this function takes the knowledge base, statement to calls ttCheck all to determine if the knowledge base entails the statement.
+removeSymbols() -> this function removes symbols from the list of symbols.
+pl_True() -> this function checks for truth value fot the statement and knowledge base entailment.
+ttCheckAll() -> this function determine if the knowledge base entails the statement.
+getSymbols() -> this function gets the symbols from the list of symbols.
+
+----------------------------------------------------------------------------
+class LogicalExpression :
+methods : setUniqueSymbol(), setConnective(), print_expression()
+
+setUniqueSymbol() -> this method sets the symbol for the LogicalExpression it checks to make sure that it starts with one of the appropriate letters, 
+                        then checks to make sure that the rest of the string is either digits or '_'.
+setConnective() -> this method sets the connective for this LogicalExpression and returns the rest of the string to collect the symbols for it.
+print_expression() -> this function prints the expressions.
+
+---------------------------------------------------------------------------------
+How to run Code :
+
+Compile using :
+        javac -classpath . CheckTrueFalse.java
+        javac -classpath . LogicalExpression.java
+
+Execute using :
+        java CheckTrueFalse wumpus_rules.txt [knowledge base] [statement]  
+        for example: java CheckTrueFalse wumpus_rules.txt kb.txt state.txt
+            - the input files are provided to check for correctness.
+
+---------------------------------------------------------------------------------
+My knowledge base file named kb.txt is designed as follows:
+
+    At 1,1, there is no monster, pit, stench, breeze.
+    At 1,2, there is no monster, pit, stench, breeze.
+    At 1,3, there is breeze but no no monster, pit, stench.
+    At 1,4, there is pit but no monster, stench, breeze.
+    At 2,1, there is no monster, pit, stench, breeze.
+    At 2,2, there is breeze but no monster, pit, stench.
+    At 2,3, there is no monster, pit, stench, breeze.
+    At 2,4, there is breeze but no monster, pit, stench.
+    At 3,1, there is breeze but no monster, pit, stench.
+    At 3,2, there is pit but no monster, stench, breeze.
+    At 3,3, there is breeze but no monster, pit, stench.
+    At 3,4, there is stench but no monster, pit, breeze.
+    At 4,1, there is no monster, pit, stench, breeze.
+    At 4,2, there is breeze but no monster, pit, stench.
+    At 4,3, there is stench but no monster, pit, breeze.
+    At 4,4, there is monster but no stench, pit, breeze.
+
+Hence, for a statement.txt file:
+
+M_4_4
+
+The result will be "definitely true"
+
+For,
+
+M_4_2
+
+The result will be "definitely false"
+
+And so on..
+---------------------------------------------------------------------------------

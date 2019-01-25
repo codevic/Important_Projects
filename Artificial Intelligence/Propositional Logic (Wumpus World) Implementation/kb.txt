@@ -1,0 +1,80 @@
+# 1,1 = no m,p,s,b
+(not M_1_1)
+(not P_1_1)
+(not S_1_1)
+(not B_1_1)
+# 1,2 = no m,p,s,b
+(not M_1_2)
+(not P_1_2)
+(not S_1_2)
+(not B_1_2)
+# 1,3 = b / no m,s,p
+(not M_1_3)
+(not P_1_3)
+(not S_1_3)
+B_1_3
+# 1,4 = p / no m,s,b
+(not M_1_4)
+(not B_1_4)
+(not S_1_4)
+P_1_4
+# 2,1 = no m,s,p,b
+(not M_2_1)
+(not P_2_1)
+(not S_2_1)
+(not B_2_1)
+# 2,2 = b / no m,s,p
+(not M_2_2)
+(not P_2_2)
+(not S_2_2)
+B_2_2
+# 2,3 = no m,s,p,b
+(not M_2_3)
+(not P_2_3)
+(not S_2_3)
+(not B_2_3)
+# 2,4 = b / no m,s,p
+(not M_2_4)
+(not P_2_4)
+(not S_2_4)
+B_2_4
+# 3,1 = b / no m,s,p
+(not M_3_1)
+(not P_3_1)
+(not S_3_1)
+B_3_1
+# 3,2 = p / no m,s,b
+(not M_3_2)
+(not B_3_2)
+(not S_3_2)
+P_3_2
+# 3,3 = b / no m,p,s
+(not M_3_3)
+(not S_3_3)
+(not P_3_3)
+B_3_3
+# 3,4 = s / no m,p,b
+(not M_3_4)
+(not B_3_4)
+(not P_3_4)
+S_3_4
+# 4,1 = no m,s,p,b
+(not M_4_1)
+(not P_4_1)
+(not S_4_1)
+(not B_4_1)
+# 4,2 = b / no m,s,p
+(not M_4_2)
+(not P_4_2)
+(not S_4_2)
+B_4_2
+# 4,3 = s / no m,s,b
+(not M_4_3)
+(not P_4_3)
+(not B_4_3)
+S_4_3
+# 4,4 = no s,p,b
+(not S_4_4)
+(not P_4_4)
+(not B_4_4)
+# M_4_4
